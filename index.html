@@ -14,8 +14,8 @@
 </head>
 
 <style type="text/css">
-  .noodles {
-    background-image: url("./assets/img/photos/plumber-tools-bathroom-320w.JPG");
+  .hero-img {
+    background-image: url("./assets/img/photos/plumbing-hero-blueprint-320w.JPG");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -23,6 +23,16 @@
   .process-hover:hover {
     color:#fff;
     background-color: #3f78e0;
+  }
+  @media only screen and (min-width: 425px) {
+    .hero-img {
+      background-image: url("./assets/img/photos/plumbing-hero-blueprint-640w.JPG");
+    }
+  }
+  @media only screen and (min-width: 768px) {
+    .hero-img {
+      background-image: url("./assets/img/photos/plumbing-hero-blueprint-1280w.JPG");
+    }
   }
 </style>
 
@@ -100,7 +110,7 @@
       <div class="swiper-container swiper-hero dots-over" data-margin="0" data-autoplay="true" data-autoplaytime="5000" data-nav="true" data-dots="true" data-items="1">
         <div class="swiper">
           <div class="swiper-wrapper">
-            <div class="swiper-slide h-100 bg-overlay bg-overlay-600 bg-dark noodles">
+            <div class="swiper-slide h-100 bg-overlay bg-overlay-600 bg-dark hero-img">
               <div class="container h-100">
                 <div class="row h-100">
                   <div class="col-md-10 offset-md-1 col-lg-7 offset-lg-4 col-xl-7 offset-xl-4 col-xxl-7 offset-xxl-5 text-center text-lg-start justify-content-center align-self-center align-items-start">
