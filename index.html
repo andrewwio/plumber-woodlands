@@ -24,7 +24,7 @@
     <header>
       <nav class="navbar">
         <div class="navbar__logo">
-          <a href="#home">
+          <a href="#home" aria-label="Return to the top of the home page">
             <img src="./assets/img/logos/woodlands-dark-130w.png" alt="">
           </a>
         </div>
@@ -413,15 +413,15 @@
             <div class="contact__column">
               <form action="https://formsubmit.co/help@plumberwoodlands.com" method="POST">
                 <div class="contact__form-field form-float">
-                  <input name="name" required="required">
+                  <input type="text" id="name" name="name" required="required" aria-label="name">
                   <label for="name">Name *</label>
                 </div>
                 <div class="contact__form-field form-float">
-                  <input name="email" required="required">
+                  <input type="text" id="email" name="email" required="required" aria-label="email">
                   <label for="email">Email *</label>
                 </div>
                 <div class="contact__form-field form-float">
-                  <textarea name="message" required="required"></textarea>
+                  <textarea type="text" id="message" name="message" required="required" aria-label="message"></textarea>
                   <label for="message">Message *</label>
                   <input type="hidden" name="_subject" value="Ticket from plumberwoodlands.com">
                   <input type="hidden" name="_next" value="https://www.plumberwoodlands.com">
